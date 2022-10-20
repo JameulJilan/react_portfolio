@@ -6,6 +6,7 @@ import Zeda from '../../assets/zeda.PNG';
 import Bistro from '../../assets/bistro.PNG';
 import GithubFinder from '../../assets/github_finder.PNG';
 import NoteGenerator from '../../assets/note_generator.PNG';
+import ReactPortfolio from '../../assets/react_portfolio.PNG';
 
 export const portfolioRealworldProjectEnglishData = [
     {
@@ -50,8 +51,16 @@ export const portfolioRealworldProjectEnglishData = [
 
 
 export const portfolioPersonalProjectEnglishData = [
+
     {
         id: 1,
+        image: ReactPortfolio,
+        title: "Portfolio",
+        github: 'https://github.com/JameulJilan/react_portfolio',
+        demo: 'https://jameul-react-portfolio.netlify.app',
+    },
+    {
+        id: 2,
         image: Bistro,
         title: "DAVID CHU'S CHINA BISTRO",
         github: 'https://github.com/JameulJilan/Module_5_Solution',
@@ -59,24 +68,17 @@ export const portfolioPersonalProjectEnglishData = [
     },
 
     {
-        id: 2,
+        id: 3,
         image: GithubFinder,
         title: 'GitHub Finder',
         github: 'https://github.com/JameulJilan/githubFinder',
         demo: 'https://jameuljilan.github.io/githubFinder/',
     },
     {
-        id: 3,
+        id: 4,
         image: NoteGenerator,
         title: 'Note Generator',
         github: 'https://github.com/JameulJilan/noteMakingSite',
         demo: 'https://jameuljilan.github.io/noteMakingSite/index.html',
-    },
-    {
-        id: 4,
-        image: Sonamoni,
-        title:'Sonamoni',
-        github: 'na',
-        demo: 'https://sonamoni.com',
     },
 ];

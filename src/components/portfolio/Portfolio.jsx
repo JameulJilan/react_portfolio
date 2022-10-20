@@ -9,18 +9,19 @@ import 'swiper/swiper-bundle.min.css';
 
 const Portfolio = ()=>{
     const realworldProject = portfolioRealworldProjectEnglishData;
-    const personalProject = portfolioPersonalProjectEnglishData;
-    const [slideNumber,setSlideNumber] = useState(3);
-    const checkWidth = ()=>{
+    const personalProject = portfolioPersonalProjectEnglishData;   
+    const getSlideNumber = ()=>{
         if(window.innerWidth>1024){
-            setSlideNumber(3);
+            return 3;
         }
         else if(window.innerWidth>600 && window.innerWidth<=1024){
-            setSlideNumber(2)
+            return 2
         }
-        else{
-            setSlideNumber(1)
-        }
+        return 1;
+    }
+    const [slideNumber,setSlideNumber] = useState(getSlideNumber());
+    const checkWidth = ()=>{
+        setSlideNumber(getSlideNumber());
     }
     useEffect(()=>{
         window.addEventListener('resize',checkWidth);
